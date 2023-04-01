@@ -9,8 +9,5 @@ class CourseCreateUseCaseHandler(
 
     fun createCourse(createCourse: CreateCourse) {
 
-
-
-
     }
 }
