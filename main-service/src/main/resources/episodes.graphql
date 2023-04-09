@@ -1,0 +1,13 @@
+query getEpisodes($page: Int, $filter: FilterEpisode) {
+    episodes(page: $page, filter: $filter){
+        results{
+            name
+        }
+        __typename
+    }
+}
+
+type FilterEpisode {
+    name: String
+    episode: String
+}

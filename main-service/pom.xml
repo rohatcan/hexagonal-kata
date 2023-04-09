@@ -16,6 +16,7 @@
     <properties>
         <java.version>17</java.version>
         <kotlin.version>1.7.22</kotlin.version>
+        <graphql-kotlin.version>6.4.0</graphql-kotlin.version>
     </properties>
     <dependencies>
         <dependency>
@@ -42,6 +43,16 @@
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib-jdk8</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.rohat</groupId>
+            <artifactId>rick-and-morty-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.expediagroup</groupId>
+            <artifactId>graphql-kotlin-spring-client</artifactId>
+            <version>${graphql-kotlin.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -51,8 +62,8 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
-        <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
+        <sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>src</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
